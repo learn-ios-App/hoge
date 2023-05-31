@@ -11,7 +11,9 @@ import SwiftUI
 struct CardAnimationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabItemView()
+                .environmentObject(CardData())
+                .environmentObject(CategoryCardData())
         }
     }
 }
